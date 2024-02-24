@@ -10,6 +10,6 @@
         "default_popup": "popup.html",
         "default_title": "Screen Recorder"
     },
-    "host_permissions": ["http://*/*", "https://*/*"],
+    "host_permissions": ["http://*/*","https://*/*"],
     "permissions": ["storage", "tabs"]
 }
