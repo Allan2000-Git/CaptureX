@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "version": "1.0.0",
+    "name": "Screen Recorder",
+    "description": "Its records the users screen from end-to-end",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Screen Recorder"
+    },
+    "host_permissions": ["http://*/*", "https://*/*"],
+    "permissions": ["storage", "tabs"]
+}
