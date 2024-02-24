@@ -11,9 +11,3 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tabInfo) => {
         .catch((err) => console.log(err.message));
     }
 })
-
-// chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-//     if (message === 'get-user-data') {
-//         sendResponse(user);
-//     }
-// });
