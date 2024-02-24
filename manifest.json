@@ -11,5 +11,5 @@
         "default_title": "Screen Recorder"
     },
     "host_permissions": ["http://*/*","https://*/*"],
-    "permissions": ["storage", "tabs"]
+    "permissions": ["scripting", "storage", "tabs", "activeTab"]
 }
