@@ -6,7 +6,20 @@ document.addEventListener("DOMContentLoaded", () => {
     startVideo.addEventListener("click", () => {
         let queryOptions = { active: true, lastFocusedWindow: true };
         chrome.tabs.query(queryOptions, ([tab]) => {
-            chrome.tabs.sendMessage(tab.id, {action: "request_recording"}, (response) => {
+            chrome.tabs.sendMessage(tab.id, {action: "start_recording"}, (response) => {
+                if(!chrome.runtime.lastError){
+                    console.log(response);
+                }else{
+                    console.log("Error");
+                }
+            })
+        })
+    })
+
+    stopVideo.addEventListener("click", () => {
+        let queryOptions = { active: true, lastFocusedWindow: true };
+        chrome.tabs.query(queryOptions, ([tab]) => {
+            chrome.tabs.sendMessage(tab.id, {action: "stop_recording"}, (response) => {
                 if(!chrome.runtime.lastError){
                     console.log(response);
                 }else{
