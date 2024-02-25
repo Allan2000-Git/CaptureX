@@ -7,3 +7,28 @@
 body {
     min-width: 300px;
 }
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    row-gap: 20px;
+}
+
+.btn_list{
+    display: flex;
+    column-gap: 20px;
+}
+
+button{
+    background-color: blueviolet;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    border-radius: 5px;
+}
